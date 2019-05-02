@@ -1,1 +1,25 @@
 // Navigation Styles here
+
+.navigation{
+    padding: 2rem ;
+    width: 100%;
+    border-bottom: dashed @navigation-border 1.5px;
+
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        .logo{
+            margin-right: auto;
+        }
+
+        .link{
+            align-self: center;
+            margin-left: 2em;
+            a{
+                text-decoration: none;
+                color: @shark;
+                font-size: 1.8em;
+            }
+        }
+    }
+}
