@@ -8,13 +8,29 @@
     ul{
         display: flex;
         justify-content: flex-end;
+
+            @media @mobile {
+                display: inline-block;
+                text-align: center;
+                margin: auto;
+            }
         .logo{
             margin-right: auto;
+                @media @mobile{
+                    display: block;
+                    text-align: center;
+                }
+
         }
 
         .link{
             align-self: center;
             margin-left: 2em;
+
+                @media @mobile{
+                    display: inline;
+                    margin: 0 2em;
+            }
             a{
                 text-decoration: none;
                 color: @shark;
